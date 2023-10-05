@@ -103,8 +103,8 @@ class CatalystLocationServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('catalyst-location-plugin', __DIR__ . '/../resources/dist/components/catalyst-location-plugin.js'),
-//            Css::make('catalyst-location-plugin-styles', __DIR__ . '/../resources/dist/catalyst-location-plugin.css'),
-//            Js::make('catalyst-location-plugin-scripts', __DIR__ . '/../resources/dist/catalyst-location-plugin.js'),
+            //            Css::make('catalyst-location-plugin-styles', __DIR__ . '/../resources/dist/catalyst-location-plugin.css'),
+            //            Js::make('catalyst-location-plugin-scripts', __DIR__ . '/../resources/dist/catalyst-location-plugin.js'),
         ];
     }
 
