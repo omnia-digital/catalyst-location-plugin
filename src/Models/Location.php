@@ -7,13 +7,29 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use OmniaDigital\CatalystLocation\Database\Factories\LocationFactory;
 
 class Location extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'address',
+        'address_line_2',
+        'city',
+        'state',
+        'postal_code',
+        'country',
+        'lat',
+        'lng',
+    ];
     protected $guarded = [];
 
+    protected static function newFactory()
+    {
+        return app(LocationFactory::class);
+    }
     public function name(): Attribute
     {
         return new Attribute(

@@ -87,6 +87,8 @@ class CatalystLocationServiceProvider extends PackageServiceProvider
             }
         }
 
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
         // Testing
         Testable::mixin(new TestsCatalystLocation());
     }

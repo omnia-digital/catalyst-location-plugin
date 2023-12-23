@@ -25,7 +25,8 @@
         "illuminate/contracts": "^10.0",
         "illuminate/database": "^10.0",
         "illuminate/support": "^10.0",
-        "spatie/laravel-package-tools": "^1.15.0"
+        "spatie/laravel-package-tools": "^1.15.0",
+        "squirephp/countries-en": "^3.4"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
