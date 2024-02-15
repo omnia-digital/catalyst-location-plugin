@@ -24,12 +24,14 @@ class Location extends Model
         'lat',
         'lng',
     ];
+
     protected $guarded = [];
 
     protected static function newFactory()
     {
         return app(LocationFactory::class);
     }
+
     public function name(): Attribute
     {
         return new Attribute(
